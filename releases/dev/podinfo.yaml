@@ -12,7 +12,7 @@ spec:
   chart:
     git: git@github.com:keikumata/helm-operator-get-started
     path: charts/podinfo
-    ref: master
+    ref: dev
   values:
     image:
       repository: 304154187190.dkr.ecr.us-east-1.amazonaws.com/flux/test
