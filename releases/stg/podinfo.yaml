@@ -3,19 +3,19 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: podinfo-rc
-  namespace: stg
+  namespace: fluxcd
   annotations:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: glob:stg-*
 spec:
   releaseName: podinfo-rc
   chart:
-    git: git@github.com:fluxcd/helm-operator-get-started
+    git: git@github.com:keikumata/helm-operator-get-started
     path: charts/podinfo
     ref: master
   values:
     image:
-      repository: stefanprodan/podinfo
+      repository: 304154187190.dkr.ecr.us-east-1.amazonaws.com/flux/test
       tag: stg-9ij63o4c
     replicaCount: 2
     hpa:
