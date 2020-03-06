@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: 304154187190.dkr.ecr.us-east-1.amazonaws.com/flux/test
-      tag: dev-hdtwcel9
+      tag: dev-uojc0kcv
     replicaCount: 1
     hpa:
       enabled: false
