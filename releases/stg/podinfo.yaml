@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: 304154187190.dkr.ecr.us-east-1.amazonaws.com/flux/test
-      tag: stg-qpi6ytpe
+      tag: stg-ervfhdqm
     replicaCount: 2
     hpa:
       enabled: true
