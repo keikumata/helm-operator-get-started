@@ -3,18 +3,18 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: podinfo-prod
-  namespace: prod
+  namespace: fluxcd
   annotations:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: semver:~0.4
 spec:
   releaseName: podinfo-prod
   chart:
-    git: git@github.com:fluxcd/helm-operator-get-started
+    git: git@github.com:keikumata/helm-operator-get-started
     path: charts/podinfo
     ref: master
   values:
     image:
-      repository: stefanprodan/podinfo
+      repository: 304154187190.dkr.ecr.us-east-1.amazonaws.com/flux/test
       tag: 0.4.11
     replicaCount: 3
