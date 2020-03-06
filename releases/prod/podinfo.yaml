@@ -16,5 +16,5 @@ spec:
   values:
     image:
       repository: 304154187190.dkr.ecr.us-east-1.amazonaws.com/flux/test
-      tag: 0.4.11
+      tag: 0.4.10
     replicaCount: 3
